@@ -99,7 +99,7 @@ function def_circs(num){
     let duration = 300; //in secs
     let init_loops = 40;
     for (let i = 0; i < num; i++){
-        audio = new Audio(`poly-sounds/${(i%5)+1}.wav`);
+        audio = new Audio(`${(i%5)+1}.wav`);
         audio.volume = 0.03;
         let loop_num = (2*Math.PI*(init_loops-i))
         circs.push({
